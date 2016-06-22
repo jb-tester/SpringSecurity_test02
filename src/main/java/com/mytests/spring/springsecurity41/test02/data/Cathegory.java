@@ -1,4 +1,4 @@
-package com.mytests.spring.springsecurity41.test02.configs;
+package com.mytests.spring.springsecurity41.test02.data;
 
 /**
  * *******************************

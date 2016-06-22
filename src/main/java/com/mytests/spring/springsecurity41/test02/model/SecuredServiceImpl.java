@@ -1,6 +1,8 @@
-package com.mytests.spring.springsecurity41.test02.configs;
+package com.mytests.spring.springsecurity41.test02.model;
 
-import org.springframework.security.access.annotation.Secured;
+import com.mytests.spring.springsecurity41.test02.data.Book;
+import com.mytests.spring.springsecurity41.test02.data.Cathegory;
+import com.mytests.spring.springsecurity41.test02.data.Movie;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
@@ -21,7 +23,7 @@ public class SecuredServiceImpl implements SecuredService {
     List<Movie> movies = new ArrayList<>();
 
     public SecuredServiceImpl() {
-        books.add(new Book("b1","a1",Cathegory.CHILD));
+        books.add(new Book("b1","a1", Cathegory.CHILD));
         books.add(new Book("b2","a2",Cathegory.CHILD));
         books.add(new Book("b3","a3",Cathegory.ADULT));
         books.add(new Book("b4","a4",Cathegory.ADULT));

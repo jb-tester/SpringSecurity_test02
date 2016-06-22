@@ -1,11 +1,10 @@
-package com.mytests.spring.springsecurity41.test02.configs;
+package com.mytests.spring.springsecurity41.test02.model;
 
-import org.springframework.security.access.annotation.Secured;
+import com.mytests.spring.springsecurity41.test02.data.Book;
+import com.mytests.spring.springsecurity41.test02.data.Movie;
 import org.springframework.security.access.prepost.PostAuthorize;
 import org.springframework.security.access.prepost.PostFilter;
-import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.access.prepost.PreFilter;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 

@@ -1,7 +1,8 @@
-package com.mytests.spring.springsecurity41.test02.configs;
+package com.mytests.spring.springsecurity41.test02.controllers;
 
+import com.mytests.spring.springsecurity41.test02.model.SecuredService;
+import com.mytests.spring.springsecurity41.test02.utils.MyPreAuthorize;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.access.annotation.Secured;
 import org.springframework.security.access.method.P;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
