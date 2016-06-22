@@ -18,6 +18,7 @@ import java.util.List;
 
 public interface SecuredService {
 
+
     List<Book> getAllBooks();
 
     List<Movie> getAllMovies();

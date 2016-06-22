@@ -44,7 +44,8 @@ public class LibController {
         return "entertainment";
     }
 
-    @Secured({"ROLE_CHILD","ROLE_PARENT"})
+    //@Secured({"ROLE_CHILD","ROLE_PARENT"})
+    @MyPreAuthorize
     @RequestMapping("/entertainment/child")
     public String entertainmentChild(ModelMap model, Principal principal) {
         model.addAttribute("entertainment_attr1", "entertainment_attr1");
