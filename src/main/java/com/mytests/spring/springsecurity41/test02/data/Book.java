@@ -8,8 +8,8 @@ package com.mytests.spring.springsecurity41.test02.data;
  */
 public class Book {
     String name;
-    String author;
-    Cathegory cathegory;
+    public String author;
+    public Cathegory cathegory;
 
     public Book(String name, String author, Cathegory cathegory) {
         this.name = name;
@@ -22,23 +22,8 @@ public class Book {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getAuthor() {
         return author;
     }
 
-    public void setAuthor(String author) {
-        this.author = author;
-    }
-
-    public Cathegory getCathegory() {
-        return cathegory;
-    }
-
-    public void setCathegory(Cathegory cathegory) {
-        this.cathegory = cathegory;
-    }
 }

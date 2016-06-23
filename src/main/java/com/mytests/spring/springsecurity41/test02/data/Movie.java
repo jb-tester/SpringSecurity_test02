@@ -19,17 +19,7 @@ public class Movie {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 
-    public Cathegory getCathegory() {
-        return cathegory;
-    }
 
-    public void setCathegory(Cathegory cathegory) {
-        this.cathegory = cathegory;
-    }
-
-    Cathegory cathegory;
+    public Cathegory cathegory;
 }
