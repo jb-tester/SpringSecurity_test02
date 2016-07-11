@@ -1,6 +1,7 @@
 package com.mytests.spring.springsecurity41.test02.model;
 
 import com.mytests.spring.springsecurity41.test02.data.Book;
+import com.mytests.spring.springsecurity41.test02.data.Cathegory;
 import com.mytests.spring.springsecurity41.test02.data.Movie;
 import org.springframework.security.access.prepost.PostAuthorize;
 import org.springframework.security.access.prepost.PostFilter;
@@ -34,5 +35,5 @@ public interface SecuredService {
     List<Movie> getPornMovies();
 
     @PreFilter(value = "filterObject == 'a7'", filterTarget = "authors")
-    List<Book> getMyBooks(List<String> authors);
+    List<Book> getMyBooks(List<Cathegory> cathegories, List<String> authors);
 }

@@ -77,7 +77,7 @@ public class SecuredServiceImpl implements SecuredService {
     }
 
     @Override
-    public List<Book> getMyBooks(List<String> authors) {
+    public List<Book> getMyBooks(List<Cathegory> cathegories, List<String> authors) {
         List<Book> books1 = new ArrayList<>();
         for (Iterator<Book> iterator = books.iterator(); iterator.hasNext(); ) {
             Book next = iterator.next();

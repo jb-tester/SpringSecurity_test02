@@ -1,5 +1,6 @@
 package com.mytests.spring.springsecurity41.test02.controllers;
 
+import com.mytests.spring.springsecurity41.test02.data.Cathegory;
 import com.mytests.spring.springsecurity41.test02.model.SecuredService;
 import com.mytests.spring.springsecurity41.test02.utils.MyPreAuthorize;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -66,7 +67,7 @@ public class LibController {
         authors.add("a1");
         authors.add("a2");
         authors.add("a7");
-        model.addAttribute("my_books", securedService.getMyBooks(authors));
+        model.addAttribute("my_books", securedService.getMyBooks(null,authors));
         return "entertainment";
     }
 
