@@ -13,6 +13,6 @@ import java.lang.annotation.*;
 @Target({ElementType.METHOD, ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
 @Inherited
-@PreAuthorize("hasAnyAuthority('ROLE_PARENT','ROLE_CHILD') and @refBean.refInt>0 and T(com.mytests.spring.springsecurity41.test02.model.RefBean).REFCONST")
+@PreAuthorize("(hasAnyAuthority('ROLE_PARENT','ROLE_CHILD') and @refBean.refInt>0 and T(com.mytests.spring.springsecurity41.test02.model.RefBean).REFCONST)")
 public @interface MyPreAuthorize {
 }
