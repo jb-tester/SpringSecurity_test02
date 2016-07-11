@@ -37,7 +37,6 @@ public class MySecurityConfig extends WebSecurityConfigurerAdapter {
                 .anyRequest().authenticated()
                 .and()
                 .formLogin()
-
                 .and()
                 .sessionManagement()
                 .maximumSessions(1)
