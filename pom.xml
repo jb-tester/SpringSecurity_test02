@@ -7,6 +7,9 @@
     <groupId>com.mytests.spring.springsecurity41</groupId>
     <artifactId>test02</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <properties>
+        <spring-security.version>5.5.1</spring-security.version>
+    </properties>
     <packaging>war</packaging>
 
     <name>test02</name>
@@ -27,23 +30,23 @@
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
-            <version>3.0.1</version>
+            <version>4.0.1</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-web</artifactId>
-            <version>5.3.3.RELEASE</version>
+            <version>${spring-security.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-config</artifactId>
-            <version>5.3.3.RELEASE</version>
+            <version>${spring-security.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-core</artifactId>
-            <version>5.3.3.RELEASE</version>
+            <version>${spring-security.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
@@ -65,7 +68,7 @@
         <dependency>
             <groupId>javax.servlet.jsp.jstl</groupId>
             <artifactId>javax.servlet.jsp.jstl-api</artifactId>
-            <version>1.2.1</version>
+            <version>1.2.2</version>
             <scope>compile</scope>
         </dependency>
         <dependency>

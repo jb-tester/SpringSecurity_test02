@@ -26,7 +26,8 @@ public class LibController {
     @Autowired
     private SecuredService securedService;
 
-    @PreAuthorize("hasAnyRole('PARENT','ADMIN') and (#pr.name == 'irina')")
+   @PreAuthorize("hasAnyRole('PARENT','ADMIN') and (#pr.name == 'irina')")
+    //@PreAuthorize("hasRole('ADMIN')")
     @RequestMapping("/entertainment/parent")
     public String entertainmentParent(ModelMap model, @P("pr")Principal my_principal) {
         model.addAttribute("entertainment_attr1", "entertainment_attr1");
