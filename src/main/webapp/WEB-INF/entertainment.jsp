@@ -13,39 +13,38 @@
 </head>
 <body>
 principal: ${principal_name}
-<p/>
-${entertainment_attr1}
 <p>
-    All Books:
+${entertainment_attr1} </p>
+All Books:
     <c:forEach items="${allBooks}" var="book">
 <p>${book.author} ${book.name}</p>
 </c:forEach>
-</p>
-Child Books:
+
+<p>Child Books:</p>
 <c:forEach items="${childBooks}" var="book">
 
 </c:forEach>
 <p>
-    Child Movies:
+    Child Movies: </p>
     <c:forEach items="${childMovies}" var="film">
 <p>${film.name}</p>
 </c:forEach>
-</p>
+
 <p>
-    X Movies:
+    X Movies:    </p>
     <c:forEach items="${x_films}" var="film">
         <p>${film.name}</p>
     </c:forEach>
-</p>
-X Books:
+
+<p>X Books:  </p>
 <c:forEach items="${x_books}" var="book">
     <p> ${book.name}  ${book.author} </p>
 </c:forEach>
 <p>
-My Books:
+    My Books:  </p>
 <c:forEach items="${my_books}" var="book">
     <p> ${book.name}  ${book.author} </p>
 </c:forEach>
-<p>
+
 </body>
 </html>

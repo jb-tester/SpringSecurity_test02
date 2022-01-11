@@ -16,8 +16,9 @@ import java.util.List;
 
 /**
  * *******************************
- * Created by Irina.Petrovskaya on 6/17/2016.
- * Project: test01
+ * <p> Created by Irina.Petrovskaya on 6/17/2016.</p>
+ * <p> Project: SpringSecurity_test02 </p>
+ * <p> Controller with method security </p>
  * *******************************
  */
 @Controller
